@@ -1,16 +1,16 @@
+import { projectName } from "~/consts";
 import type { Route } from "./+types/home";
 
+const title = "ハイドレーションの練習";
+
 export function meta({}: Route.MetaArgs) {
-	return [
-		{ title: "New React Router App" },
-		{ name: "description", content: "Welcome to React Router!" },
-	];
+	return [{ title: `${title} - ${projectName}` }, { name: "description", content: title }];
 }
 
 export default function Home() {
 	return (
 		<main>
-			<h1>test</h1>
+			<h1>{title}</h1>
 		</main>
 	);
 }
