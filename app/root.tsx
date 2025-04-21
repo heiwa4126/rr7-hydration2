@@ -34,6 +34,7 @@ function Navbar() {
 			<NavLink to="">Home</NavLink>
 			<NavLink to="dataloader">データローディング</NavLink>
 			<NavLink to="action">アクション1</NavLink>
+			<NavLink to="d2">データローディング2</NavLink>
 		</nav>
 	);
 }

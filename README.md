@@ -10,9 +10,14 @@ hydration というか
 
 する練習。
 
+SSR は時々変更してるので
+[react-router.config.ts](react-router.config.ts)
+を確認すること
+
 ## 参考
 
 - [データローディング - React Router v7 ドキュメント 日本語版](https://react-router-docs-ja.techtalk.jp/start/framework/data-loading)
+- [アクション - React Router v7 ドキュメント 日本語版](https://react-router-docs-ja.techtalk.jp/start/framework/actions)
 - [クライアントデータ - React Router v7 ドキュメント 日本語版](https://react-router-docs-ja.techtalk.jp/how-to/client-data)
 
 ## メモ
