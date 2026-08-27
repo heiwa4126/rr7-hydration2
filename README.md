@@ -17,6 +17,22 @@ SSR は時々変更してるので
 あと d2 で Cloudflare 呼んでるので、対象の Workers は消さないこと。
 参照: [app/fetcher.ts](./app/fetcher.ts)
 
+## 開発時の型チェック
+
+```bash
+pnpm run typecheck
+```
+
+`typecheck` は React Router のルート型を生成してから TypeScript の型チェックを実行します。
+次のタイミングで実行してください。
+
+- ルートを追加・削除したとき
+- `loader()`、`clientLoader()`、`action()`、`clientAction()`、`meta()`、コンポーネントの引数を変更したとき
+- 依存パッケージやルート設定を更新したとき
+- コミットや Pull Request を作成する前
+
+ルート型を更新せずに TypeScript のチェックだけを素早く実行したい場合は、`pnpm run lint-tsc` を使います。
+
 ## 参考
 
 - [データローディング - React Router v7 ドキュメント 日本語版](https://react-router-docs-ja.techtalk.jp/start/framework/data-loading)

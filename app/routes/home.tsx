@@ -1,9 +1,8 @@
 import { projectName } from "~/consts";
-import type { Route } from "./+types/home";
 
 const title = "ハイドレーションの練習";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
 	return [{ title: `${title} - ${projectName}` }, { name: "description", content: title }];
 }
 

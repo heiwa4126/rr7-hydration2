@@ -5,7 +5,7 @@ import type { Route } from "./+types/action";
 
 const title = "アクションの練習";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
 	return [{ title: `${title} - ${projectName}` }, { name: "description", content: title }];
 }
 

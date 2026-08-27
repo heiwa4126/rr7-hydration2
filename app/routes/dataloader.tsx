@@ -4,13 +4,13 @@ import { projectName } from "~/consts";
 import { type UUIDs, fetchUUIDs } from "~/fetcher";
 import type { Route } from "./+types/dataloader";
 
-export async function loader({}: Route.LoaderArgs) {
+export async function loader() {
 	// const uuids = await fetchUUIDs(); return { uuids };
 	// return { uuids: ["00000000-0000-0000-0000-000000000000"] };
 	return { uuids: ["(loading...)"] };
 }
 
-export async function clientLoader({}: Route.ClientLoaderArgs) {
+export async function clientLoader() {
 	const uuids = await fetchUUIDs();
 	return { uuids };
 }
@@ -19,7 +19,7 @@ clientLoader.hydrate = true as const;
 
 const title = "データローディングの練習";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
 	return [{ title: `${title} - ${projectName}` }, { name: "description", content: title }];
 }
 

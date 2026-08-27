@@ -6,11 +6,11 @@ import type { Route } from "./+types/d2";
 
 const title = "データローディングの練習2";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
 	return [{ title: `${title} - ${projectName}` }, { name: "description", content: title }];
 }
 
-export async function loader({}: Route.LoaderArgs) {
+export async function loader() {
 	const testdata = await fetchTestData();
 	// const testdata = {
 	// 	message: "Hello, world!",
@@ -32,7 +32,7 @@ function TestDataButton() {
 	);
 }
 
-export default function Page({ loaderData, actionData, params, matches }: Route.ComponentProps) {
+export default function Page({ loaderData }: Route.ComponentProps) {
 	return (
 		<main>
 			<h1>{title}</h1>
