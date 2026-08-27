@@ -12,7 +12,10 @@ hydration というか
 
 SSR は時々変更してるので
 [react-router.config.ts](react-router.config.ts)
-を確認すること
+を確認すること。
+
+あと d2 で Cloudflare 呼んでるので、対象の Workers は消さないこと。
+参照: [app/fetcher.ts](./app/fetcher.ts)
 
 ## 参考
 

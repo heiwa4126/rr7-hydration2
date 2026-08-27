@@ -11,6 +11,7 @@
 		"preinstall": "pnpm audit",
 		"format": "oxfmt",
 		"lint": "oxlint",
+		"lint-tsc": "tsc --noEmit",
 		"check": "oxfmt && oxlint --fix"
 	},
 	"dependencies": {
@@ -28,11 +29,9 @@
 		"@types/node": "^26.2.0",
 		"@types/react": "^19.2.18",
 		"@types/react-dom": "^19.2.4",
-		"react-router-devtools": "^6.2.3",
 		"serve": "^14.2.6",
 		"tailwindcss": "^4.3.3",
 		"typescript": "^7.0.2",
-		"vite": "^8.2.2",
-		"vite-tsconfig-paths": "^6.1.1"
+		"vite": "^8.2.2"
 	}
 }

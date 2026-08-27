@@ -7,7 +7,7 @@ export default {
 	// Server-side render by default, to enable SPA mode set this to `false`
 
 	// パターン 0 : `pnpm build && pnpm start`
-	ssr: true,
+	ssr: true
 
 	// パターン 1 : `pnpm build && pnpm start`
 	// ssr: true,

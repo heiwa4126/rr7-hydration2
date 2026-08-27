@@ -4,7 +4,7 @@ import {
 	Outlet,
 	Scripts,
 	ScrollRestoration,
-	isRouteErrorResponse,
+	isRouteErrorResponse
 } from "react-router";
 
 import { NavLink } from "react-router";
