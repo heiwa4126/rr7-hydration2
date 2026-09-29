@@ -15,23 +15,23 @@
 		"check": "oxfmt && oxlint --fix"
 	},
 	"dependencies": {
-		"@react-router/node": "^8.3.0",
-		"@react-router/serve": "^8.3.0",
-		"isbot": "^5.2.1",
-		"react": "^19.2.8",
-		"react-dom": "^19.2.8",
-		"react-router": "^8.3.0"
+		"@react-router/node": "^8.4.0",
+		"@react-router/serve": "^8.4.0",
+		"isbot": "^5.2.2",
+		"react": "^19.3.0",
+		"react-dom": "^19.3.0",
+		"react-router": "^8.4.0"
 	},
 	"devDependencies": {
-		"@react-router/dev": "^8.3.0",
+		"@react-router/dev": "^8.4.0",
 		"@tailwindcss/typography": "^0.5.20",
 		"@tailwindcss/vite": "^4.3.3",
-		"@types/node": "^26.2.0",
-		"@types/react": "^19.2.18",
-		"@types/react-dom": "^19.2.4",
+		"@types/node": "^26.6.3",
+		"@types/react": "^19.3.0",
+		"@types/react-dom": "^19.3.0",
 		"serve": "^14.2.6",
 		"tailwindcss": "^4.3.3",
 		"typescript": "^7.0.2",
-		"vite": "^8.2.2"
+		"vite": "^8.3.1"
 	}
 }
